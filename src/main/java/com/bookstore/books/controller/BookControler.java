@@ -17,7 +17,7 @@ public class BookControler {
     private final BookService bookService;
 
     //TODO INSERT HTTP OUTPUT AND VALIDATION
-    @PostMapping("/save")
+    @PostMapping("/create")
     public Book save(@RequestBody Book book) {
         return bookService.save(book);
     }
@@ -33,6 +33,8 @@ public class BookControler {
     public Book listId(@PathVariable long id) {
         return bookService.listID(id);
     }
+
+    @PutMapping("/save")
 
     //TODO ATUALIZAR LIVROS
     //TODO DELETAR LIVROS
