@@ -17,6 +17,10 @@ public class BookService {
         return bookRepository.save(book);
     }
 
+    public Book create(Book book) {
+        return bookRepository.save(book);
+    }
+
     public List<Book> list() {
         return bookRepository.findAll();
     }
