@@ -23,6 +23,7 @@ public class Book {
 
     private int publicationYear;
 
+    @Column(columnDefinition = "TEXT")
     private String summary;
 
 }
