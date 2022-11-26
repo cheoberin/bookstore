@@ -1,15 +1,13 @@
 package com.bookstore.books.controller;
 
-import com.bookstore.books.BooksApplication;
 import com.bookstore.books.model.Book;
 import com.bookstore.books.service.BookService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequiredArgsConstructor
 @RequestMapping("/book")
 public class BookControler {
@@ -23,7 +21,7 @@ public class BookControler {
     }
 
     //TODO INSERT HTTPOUTPUT AND VALIDATION
-    @GetMapping
+    @GetMapping("/list")
     public List<Book> list() {
         return bookService.list();
     }

@@ -22,6 +22,7 @@ public class Book {
     private Publisher publisher;
 
     private int publicationYear;
+
     private String summary;
 
 }

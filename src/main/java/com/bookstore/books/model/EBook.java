@@ -8,8 +8,7 @@ import javax.persistence.InheritanceType;
 
 @Entity
 @Data
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-public class eBook extends Book{
+public class EBook extends Book{
 
     private String format;
 

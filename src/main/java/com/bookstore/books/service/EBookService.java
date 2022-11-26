@@ -1,13 +1,13 @@
 package com.bookstore.books.service;
 
-import com.bookstore.books.repository.eBookRepository;
+import com.bookstore.books.repository.EBookRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class eBookService {
+public class EBookService {
 
-    private final eBookRepository eBookRepository;
+    private final EBookRepository eBookRepository;
 
 }
